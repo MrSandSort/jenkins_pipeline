@@ -96,7 +96,7 @@ function AddItemForm({ onNewItem }) {
                     value={newItem}
                     onChange={e => setNewItem(e.target.value)}
                     type="text"
-                    placeholder="New Item"
+                    placeholder="Add New Item"
                     aria-describedby="basic-addon1"
                 />
                 <InputGroup.Append>
@@ -166,7 +166,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         size="sm"
                         variant="link"
                         onClick={removeItem}
-                        aria-label="Remove Item"
+                        aria-label="Delete Item"
                     >
                         <i className="fa fa-trash text-danger" />
                     </Button>
