@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
+                cleanWs();
                 // Checkout the source code from the GitHub repository
                 checkout scm
             }
@@ -52,7 +53,6 @@ pipeline {
         always {
             // Actions to always perform, regardless of success or failure
             echo 'Cleaning up...'
-            cleanWs()
         }
     }
 }
